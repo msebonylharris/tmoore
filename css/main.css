@@ -1,3 +1,80 @@
+
+/*this section is dedicated to the main body------------------------------------------------------*/
+body{
+  	float: left;
+  	color: black;
+  	font: 1em /* 16px/16px*/ Georgia, Verdana, ariel;
+  	width: 960px;
+  	border: .25em solid #111; /* 32px/16px */
+ 	padding: .5em/* 10px/16px */;
+	margin: .5em /* 10px/16px */;
+	background: url('../images/bluetexturedscreen2.png') repeat 20%;
+}
+
+
+
+/*this section is dedicated to the mainphoto------------------------------------------------------*/
+.main_photo{
+	padding: .5em /* 4px/16px */;
+  	margin: .5em /*4px/16px */; 
+  	}
+
+/*This section is for the article Who is Tammie. It should contain no other css */
+article{
+  	background-color: #fff;
+	border: .25em /* 4px/16px */ solid #111;
+	padding: .5em /* 4px/16px */;
+  	margin: .5em /*4px/16px */; 
+  	float: left;
+  	width: 95%;
+}
+
+
+/*This section is for the article Who is Tammie. It should contain no other css */
+.ed{
+  	background-color: #fff;
+  	border: .25em /* 4px/16px */ solid #111;
+  	padding: .5em /*5px/16px*/;
+  	margin: .5em /*5px/16px*/; 
+  	float: left;
+ 	width: 95%;
+
+}
+
+
+/*This section is for the section benefits of a Parlegal. It should contain no other css */
+.paralegal_benefits{
+  	background-color: #fff;
+  	border: .25em /* 4px/16px */ solid #111;
+  	padding: .5em /* 4px/16px */;
+  	margin: .5em /*4px/16px */;   
+  	float: left;
+  	-ms-column-count: 3;
+  	-ms-column-gap: 1.5em /* 24px/16px */;
+  	-moz-column-count: 3;
+  	-moz-column-gap: 1.5em /* 24px/16px */;
+  	-web-column-count: 3;
+  	-web-column-gap: 1.5em /* 24px/16px */;
+  	-o-column-count: 3;
+  	-o-column-gap: 1.5em /* 24px/16px */;
+  	-khtml-column-count: 3;
+  	-khtml-column-gap: 1.5em /* 24px/16px */;
+  	width: 95%;
+}
+
+
+/*This section is for the footer section. It should contain no other css */
+footer{
+  	background-color: #fff;
+  	border: .25em /* 4px/16px */ solid #111;
+  	padding: .5em /* 4px/16px */;
+  	margin: .5em /*4px/16px */;   
+  	float: left;
+  	font-size: 1em;
+  	width: 95%;
+}
+
+
 /*this section is dedicated to the main body------------------------------------------------------*/
 body{
   	float: left;
@@ -11,9 +88,16 @@ body{
 }
 
 /*this section is dedicated to the headings------------------------------------------------------*/
-h1, h2, h3{
+h1, h2, h3, h4{
   	color: #069;
-  	font: 1.5em /* 24px/16px*/ Helvetica Neue;	
+  	font: 1.5em /* 24px/16px*/ Helvetica Neue, Ariel;
+  	text-shadow: .0625em .0625em .0625em #111;
+}
+
+h1{
+	font: 3.25em /* 32px/16px*/ Ariel;
+	text-align: center;
+	color: #036;
 }
 
 /*this section is dedicated to the mainphoto------------------------------------------------------*/
@@ -50,6 +134,16 @@ article{
   	padding: .5em /* 4px/16px */;
   	margin: .5em /*4px/16px */;   
   	float: left;
+  	-ms-column-count: 3;
+  	-ms-column-gap: 1.5em /* 24px/16px */;
+  	-moz-column-count: 3;
+  	-moz-column-gap: 1.5em /* 24px/16px */;
+  	-web-column-count: 3;
+  	-web-column-gap: 1.5em /* 24px/16px */;
+  	-o-column-count: 3;
+  	-o-column-gap: 1.5em /* 24px/16px */;
+  	-khtml-column-count: 3;
+  	-khtml-column-gap: 1.5em /* 24px/16px */;
 }
 
 
@@ -64,4 +158,39 @@ footer{
 
 #footer{
   	font-size: 1em; /* 16px/16px*/
+  	width: 90%;
+}
+
+/*This section is for the main nav. It should contain no other css */
+nav ul li{
+	width: 30%;
+	background: #069;
+	float: left;
+	padding: .75em;
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	background: #fff;
+	display: block;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
+	color: #069;
+}
+
+
+a:visited{
+	color: #009;
+}
+
+a:hover{
+	color: #fff;
+	background: #069;
+}
+
+a:active{
+	color: #fff;
+	background: #009;
 }
