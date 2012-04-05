@@ -5,7 +5,7 @@ body{
   	color: black;
   	font: 1em /* 16px/16px*/ Georgia, Verdana, ariel;
   	width: 960px;
-  	border: .25em solid #111; /* 32px/16px */
+  	border: .25em solid #036; /* 32px/16px */
  	padding: .5em/* 10px/16px */;
 	margin: .5em /* 10px/16px */;
 	background: url('../images/bluetexturedscreen2.png') repeat 20%;
@@ -22,7 +22,7 @@ body{
 /*This section is for the article Who is Tammie. It should contain no other css */
 article{
   	background-color: #fff;
-	border: .25em /* 4px/16px */ solid #111;
+	border: .25em /* 4px/16px */ solid #036;
 	padding: .5em /* 4px/16px */;
   	margin: .5em /*4px/16px */; 
   	float: left;
@@ -33,7 +33,7 @@ article{
 /*This section is for the article Who is Tammie. It should contain no other css */
 .ed{
   	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #111;
+  	border: .25em /* 4px/16px */ solid #036;
   	padding: .5em /*5px/16px*/;
   	margin: .5em /*5px/16px*/; 
   	float: left;
@@ -45,7 +45,7 @@ article{
 /*This section is for the section benefits of a Parlegal. It should contain no other css */
 .paralegal_benefits{
   	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #111;
+  	border: .25em /* 4px/16px */ solid #036;
   	padding: .5em /* 4px/16px */;
   	margin: .5em /*4px/16px */;   
   	float: left;
@@ -66,7 +66,7 @@ article{
 /*This section is for the footer section. It should contain no other css */
 footer{
   	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #111;
+  	border: .25em /* 4px/16px */ solid #036;
   	padding: .5em /* 4px/16px */;
   	margin: .5em /*4px/16px */;   
   	float: left;
@@ -81,7 +81,7 @@ body{
   	color: black;
   	font: 1em /* 16px/16px*/ Georgia, Verdana, ariel;
   	width: 960px;
-  	border: .25em solid #111; /* 32px/16px */
+  	border: .25em solid #036; /* 32px/16px */
  	padding: .5em/* 10px/16px */;
 	margin: .5em /* 10px/16px */;
 	background: url('../images/bluetexturedscreen2.png') repeat 20%;
@@ -109,7 +109,7 @@ h1{
 /*This section is for the article Who is Tammie. It should contain no other css */
 article{
   	background-color: #fff;
-	border: .25em /* 4px/16px */ solid #111;
+	border: .25em /* 4px/16px */ solid #036;
 	padding: .5em /* 4px/16px */;
   	margin: .5em /*4px/16px */; 
   	float: left;
@@ -119,7 +119,7 @@ article{
 /*This section is for the article Who is Tammie. It should contain no other css */
 .ed{
   	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #111;
+  	border: .25em /* 4px/16px */ solid #036;
   	padding: .5em /*5px/16px* (If the padding is 960px and the border is 4px (x2) + the padding which 
   	is 4px (x2)  */;
   	margin: .5em /*5px/16px*/; 
@@ -130,7 +130,7 @@ article{
 /*This section is for the section benefits of a Parlegal. It should contain no other css */
 .paralegal_benefits{
   	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #111;
+  	border: .25em /* 4px/16px */ solid #036;
   	padding: .5em /* 4px/16px */;
   	margin: .5em /*4px/16px */;   
   	float: left;
@@ -150,7 +150,7 @@ article{
 /*This section is for the footer section. It should contain no other css */
 footer{
   	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #111;
+  	border: .25em /* 4px/16px */ solid #036;
   	padding: .5em /* 4px/16px */;
   	margin: .5em /*4px/16px */;   
   	float: left;
