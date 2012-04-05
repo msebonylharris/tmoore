@@ -1,0 +1,67 @@
+/*this section is dedicated to the main body------------------------------------------------------*/
+body{
+  	float: left;
+  	color: black;
+  	font: 1em /* 16px/16px*/ Georgia, Verdana, ariel;
+  	width: 960px;
+  	border: .25em solid #111; /* 32px/16px */
+ 	padding: .5em/* 10px/16px */;
+	margin: .5em /* 10px/16px */;
+	background: url('../images/bluetexturedscreen2.png') repeat 20%;
+}
+
+/*this section is dedicated to the headings------------------------------------------------------*/
+h1, h2, h3{
+  	color: #069;
+  	font: 1.5em /* 24px/16px*/ Helvetica Neue;	
+}
+
+/*this section is dedicated to the mainphoto------------------------------------------------------*/
+.main_photo{
+	padding: .5em /* 4px/16px */;
+  	margin: .5em /*4px/16px */; 
+}
+
+/*This section is for the article Who is Tammie. It should contain no other css */
+article{
+  	background-color: #fff;
+	border: .25em /* 4px/16px */ solid #111;
+	padding: .5em /* 4px/16px */;
+  	margin: .5em /*4px/16px */; 
+  	float: left;
+}
+
+
+/*This section is for the article Who is Tammie. It should contain no other css */
+.ed{
+  	background-color: #fff;
+  	border: .25em /* 4px/16px */ solid #111;
+  	padding: .5em /*5px/16px* (If the padding is 960px and the border is 4px (x2) + the padding which 
+  	is 4px (x2)  */;
+  	margin: .5em /*5px/16px*/; 
+  	float: left;
+}
+
+
+/*This section is for the section benefits of a Parlegal. It should contain no other css */
+.paralegal_benefits{
+  	background-color: #fff;
+  	border: .25em /* 4px/16px */ solid #111;
+  	padding: .5em /* 4px/16px */;
+  	margin: .5em /*4px/16px */;   
+  	float: left;
+}
+
+
+/*This section is for the footer section. It should contain no other css */
+footer{
+  	background-color: #fff;
+  	border: .25em /* 4px/16px */ solid #111;
+  	padding: .5em /* 4px/16px */;
+  	margin: .5em /*4px/16px */;   
+  	float: left;
+}
+
+#footer{
+  	font-size: 1em; /* 16px/16px*/
+}
