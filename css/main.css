@@ -8,159 +8,115 @@ body{
   	border: .25em solid #036; /* 32px/16px */
  	padding: .5em/* 10px/16px */;
 	margin: .5em /* 10px/16px */;
-	background: url('../images/bluetexturedscreen2.png') repeat 20%;
+	background: url('../images/bluetexturedscreen2.png') repeat 20% fixed;
 }
 
 
 
 /*this section is dedicated to the mainphoto------------------------------------------------------*/
-.main_photo{
-	padding: .5em /* 4px/16px */;
-  	margin: .5em /*4px/16px */; 
-  	}
 
-/*This section is for the article Who is Tammie. It should contain no other css */
-article{
+article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
   	background-color: #fff;
 	border: .25em /* 4px/16px */ solid #036;
 	padding: .5em /* 4px/16px */;
-  	margin: .5em /*4px/16px */; 
+  	margin: .5em /*4px/16px */;
   	float: left;
   	width: 95%;
+  	}
+
+/*This section is for the Education Section. It should contain no other css */
+
+.ed div ul li{
+	list-style-type: square;
 }
 
-
-/*This section is for the article Who is Tammie. It should contain no other css */
-.ed{
-  	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #036;
-  	padding: .5em /*5px/16px*/;
-  	margin: .5em /*5px/16px*/; 
-  	float: left;
- 	width: 95%;
-
-}
-
-
-/*This section is for the section benefits of a Parlegal. It should contain no other css */
+/*This section is for the section benefits of a Parlegal. It should contain no other css in addition
+1.5em is equal to 24px/16px */
 .paralegal_benefits{
-  	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #036;
-  	padding: .5em /* 4px/16px */;
-  	margin: .5em /*4px/16px */;   
-  	float: left;
+  	column-count: 3;
+  	column-gap: 1.5em;
   	-ms-column-count: 3;
-  	-ms-column-gap: 1.5em /* 24px/16px */;
+  	-ms-column-gap: 1.5em; 
   	-moz-column-count: 3;
-  	-moz-column-gap: 1.5em /* 24px/16px */;
+  	-moz-column-gap: 1.5em; 
   	-web-column-count: 3;
-  	-web-column-gap: 1.5em /* 24px/16px */;
+  	-web-column-gap: 1.5em; 
   	-o-column-count: 3;
-  	-o-column-gap: 1.5em /* 24px/16px */;
+  	-o-column-gap: 1.5em;
   	-khtml-column-count: 3;
-  	-khtml-column-gap: 1.5em /* 24px/16px */;
-  	width: 95%;
+  	-khtml-column-gap: 1.5em;
 }
 
+/*This section is for the Photo Gallary section. It should contain no other css */
 
-/*This section is for the footer section. It should contain no other css */
-footer{
-  	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #036;
-  	padding: .5em /* 4px/16px */;
-  	margin: .5em /*4px/16px */;   
-  	float: left;
-  	font-size: 1em;
-  	width: 95%;
+.photo_gal ul li{
+  list-style-type: none;
+  display: inline;
 }
 
-
-/*this section is dedicated to the main body------------------------------------------------------*/
-body{
-  	float: left;
-  	color: black;
-  	font: 1em /* 16px/16px*/ Georgia, Verdana, ariel;
-  	width: 960px;
-  	border: .25em solid #036; /* 32px/16px */
- 	padding: .5em/* 10px/16px */;
-	margin: .5em /* 10px/16px */;
-	background: url('../images/bluetexturedscreen2.png') repeat 20%;
+/*This section is for the CTA section "Call to Action" . It should contain no other css */
+.cta{
+  	background-color: #b8b8b8;
 }
+
+#request_info{
+  	color: #036;
+  	font: 1.25em /* 20px/16px*/ Helvetica Neue, Ariel;
+  	text-shadow: .03125em .03125em .03125em #fff;
+}
+	
 
 /*this section is dedicated to the headings------------------------------------------------------*/
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5, h6{
   	color: #069;
   	font: 1.5em /* 24px/16px*/ Helvetica Neue, Ariel;
   	text-shadow: .0625em .0625em .0625em #111;
 }
 
 h1{
-	font: 3.25em /* 32px/16px*/ Ariel;
+	font: 3.25em /* 52px/16px*/ ariel;
 	text-align: center;
 	color: #036;
 }
 
+h6{
+  	font: 2em /* 32px/16px*/ ariel;
+  	color: #006;
+  	text-shadow: .03125em .03125em .03125em #fff;
+
+}
+
+/*==============================================IMAGES============================================*/
 /*this section is dedicated to the mainphoto------------------------------------------------------*/
 .main_photo{
 	padding: .5em /* 4px/16px */;
   	margin: .5em /*4px/16px */; 
 }
 
-/*This section is for the article Who is Tammie. It should contain no other css */
-article{
-  	background-color: #fff;
-	border: .25em /* 4px/16px */ solid #036;
-	padding: .5em /* 4px/16px */;
-  	margin: .5em /*4px/16px */; 
+/*this section is for the images------------------------------------------------------------------*/
+img{
   	float: left;
+  	display: inline;
+  	border: .0625em /* 1px/16px */ solid #111;
+  	box-shadow: .1875em .1875em .1875em #111 /* .1875em = 3px/16px */;
+ 	padding: .5em /* 4px/16px */;
+  	margin: .5em /*4px/16px */; 	  
+  	opacity: 0.95;
+  	border-radius: 2%;
+
 }
-
-
-/*This section is for the article Who is Tammie. It should contain no other css */
-.ed{
-  	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #036;
-  	padding: .5em /*5px/16px* (If the padding is 960px and the border is 4px (x2) + the padding which 
-  	is 4px (x2)  */;
-  	margin: .5em /*5px/16px*/; 
-  	float: left;
-}
-
-
-/*This section is for the section benefits of a Parlegal. It should contain no other css */
-.paralegal_benefits{
-  	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #036;
-  	padding: .5em /* 4px/16px */;
-  	margin: .5em /*4px/16px */;   
-  	float: left;
-  	-ms-column-count: 3;
-  	-ms-column-gap: 1.5em /* 24px/16px */;
-  	-moz-column-count: 3;
-  	-moz-column-gap: 1.5em /* 24px/16px */;
-  	-web-column-count: 3;
-  	-web-column-gap: 1.5em /* 24px/16px */;
-  	-o-column-count: 3;
-  	-o-column-gap: 1.5em /* 24px/16px */;
-  	-khtml-column-count: 3;
-  	-khtml-column-gap: 1.5em /* 24px/16px */;
-}
-
 
 /*This section is for the footer section. It should contain no other css */
 footer{
-  	background-color: #fff;
-  	border: .25em /* 4px/16px */ solid #036;
-  	padding: .5em /* 4px/16px */;
-  	margin: .5em /*4px/16px */;   
-  	float: left;
+  	font-size: 1em;
 }
 
 #footer{
-  	font-size: 1em; /* 16px/16px*/
+  	font-size: .75em; /* 12px/16px*/
   	width: 90%;
 }
 
+/*========================================MAIN NAV & LINKS=======================================*/
 /*This section is for the main nav. It should contain no other css */
 nav ul li{
 	width: 30%;
@@ -194,3 +150,10 @@ a:active{
 	color: #fff;
 	background: #009;
 }
+/*=================THIS MARKS THE END OF THE MAIN NAV & LINKS CSS=============================*/
+
+
+
+
+
+
