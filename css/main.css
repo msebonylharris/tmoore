@@ -14,18 +14,16 @@ body{
 	width: 96.42857142857142%;
 }
 
-
-
 /*this section is dedicated to the mainphoto------------------------------------------------------*/
 /*=Section Margin/Padding Percent Conversion = .4px / 1235px Margin Percent = .3238866396761135% ==*/
 
 article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
   	background-color: #fff;
 	border: .25em /* 4px/16px */ solid #036;
-	padding: .3238866396761135% /*.25em or 4px/16px */;
-  	margin: .3238866396761135% /*.25em or 4px/16px */;
+	padding: .3238866396761135%;  /*.25em or 4px/16px */
+  	margin: .3238866396761135%;   /*.25em or 4px/16px */
   	float: left;
-  	width: 95%;/* 1235px / 1350px = 95% */
+  	width: 95%;  /* 1235px / 1350px = 95% */
   	}
 
 /*This section is for the Education Section. It should contain no other css */
@@ -34,21 +32,22 @@ article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
 	list-style-type: square;
 }
 
-/*This section is for the section benefits of a Parlegal. It should contain no other css in addition
-1.5em is equal to 24px/16px */
+/*This section is for the section benefits of a Parlegal. It should contain no other css in addition*/
+/*========== 24px / 1235px = 1.94331983805668% or 1.5em or 24px/16px ==========*/
+
 .paralegal_benefits{
   	column-count: 3;
-  	column-gap: 1.5em;
+  	column-gap: 1.94331983805668%;
   	-ms-column-count: 3;
-  	-ms-column-gap: 1.5em; 
+  	-ms-column-gap: 1.94331983805668%; 
   	-moz-column-count: 3;
-  	-moz-column-gap: 1.5em; 
+  	-moz-column-gap: 1.94331983805668%; 
   	-web-column-count: 3;
-  	-web-column-gap: 1.5em; 
+  	-web-column-gap: 1.94331983805668%; 
   	-o-column-count: 3;
-  	-o-column-gap: 1.5em;
+  	-o-column-gap: 1.94331983805668%;
   	-khtml-column-count: 3;
-  	-khtml-column-gap: 1.5em;
+  	-khtml-column-gap: 1.94331983805668%;
 }
 
 /*This section is for the Photo Gallary section. It should contain no other css */
@@ -59,8 +58,12 @@ article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
 }
 
 /*This section is for the CTA section "Call to Action" . It should contain no other css */
+
 .cta{
-  	background-color: #b8b8b8;
+  	background: url('../images/graytexturedscreen.png') repeat 50% fixed;
+  	width: 55%;
+  	float: right;
+  	
 }
 
 #request_info{
@@ -78,24 +81,29 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-	font: 3.25em /* 52px/16px*/ ariel;
+	font: 2.5em /* 40px/16px*/ ariel;
 	text-align: center;
 	color: #036;
 	float: left;
 }
 
-h6{
-  	font: 2em /* 32px/16px*/ ariel;
+.cta{
+  	font: 1.75em /* 32px/16px*/ ariel;
   	color: #006;
-  	text-shadow: .03125em .03125em .03125em #fff;
+  	text-shadow: .03125em .03125em .03125em #000;
+}
 
+#request_info{
+	text-align: center;
 }
 
 /*==============================================IMAGES============================================*/
-/*this section is dedicated to the mainphoto------------------------------------------------------*/
+/*-----------------------this section is dedicated to the mainphoto-------------------------------*/
+/*===The width of the main_photo 819px. ===*/
+/*==== 4px / 819px = .4884004884004882% ====*/
 .main_photo{
-	padding: .5em /* 4px/16px */;
-  	margin: .5em /*4px/16px */; 
+ 	padding: .4884004884004882% /*.5em or 4px/16px */;
+  	margin: .4884004884004882% /*.5em or 4px/16px */; 	  
 }
 
 #main_photo_container{
@@ -107,9 +115,18 @@ h6{
 	max-width: 100%;
 }
 
-section ul li img{
-width: 21.92982456140352%;  /* 200px / 912px*/
+/*==== To calculate the aprox. percentage of an image I am taking the width = 1235px and calculating
+95% of that which is 1173.25px dividing the total of 95% into four equal parts which gives us 23.75% 
+or 293.3125px===*/
+.photo_gal li img{
+	width: 23.75%; 
+	/*float: left;*/
 }
+
+.photo_gal li img{
+	max-width: 100%;
+}
+
 
 /*this section is for the images------------------------------------------------------------------*/
 /*===The width of an image is 200px. ===*/
@@ -153,13 +170,6 @@ img{
   	margin: .4474272930648769% /*.5em or 4px/16px */; 	  
 }
 
-/*===The width of the main_photo_container 819px. ===*/
-/*==== 4px / 819px = .4884004884004882% ====*/
-#main_photo_container{
- 	padding: .4884004884004882% /*.5em or 4px/16px */;
-  	margin: .4884004884004882% /*.5em or 4px/16px */; 	  
-}
-
 /*This section is for the footer section. It should contain no other css */
 footer{
   	font-size: 1em;
@@ -186,7 +196,6 @@ a{
 	color: #069;
 }
 
-
 a:visited{
 	color: #009;
 }
@@ -200,9 +209,60 @@ a:active{
 	color: #fff;
 	background: #009;
 }
-/*=================THIS MARKS THE END OF THE MAIN NAV & LINKS CSS=============================*/
+/*========================THIS MARKS THE END OF THE MAIN NAV & LINKS CSS==========================*/
 
+/*-----------------------------------------MEDIA QUERIES------------------------------------------*/
+/*==================== THE FOLLOWING MEDIA QUEREIS ARE FOR 980PX OR LESS =========================*/
 
+@media screen and (max-width: 980px) {
+	nav ul li{
+	width: 80%;
+	}
+	
+	h1{
+	font-size: 1.75em;
+	}
+	
+	.cta{
+	font-size: 1.75em /* 32px*/;
+	text-align: center;
+	color: #036;
+  	width: 95%;
+  	float: left;
+  	}
+	
 
+}
+
+/*==================== THE FOLLOWING MEDIA QUEREIS ARE FOR 700PX OR LESS =========================*/
+
+@media screen and (max-width: 700px) {
+	.cta{
+	font-size: 1.5em /* 32px*/;
+  	}
+	
+	.main_photo, .photo_gal, .paralegal_benefits, .ed {
+	display: none;
+	}
+
+}
+
+/*==================== THE FOLLOWING MEDIA QUEREIS ARE FOR 480PX OR LESS =========================*/
+
+@media screen and (max-width: 480px) {
+	nav ul li{
+	width: 90%;
+	}
+	
+	h1{
+	font-size: 1.5em /* 16px*/;
+	}
+	
+	.cta{
+	font-size: 1.25em /* 12px*/;
+  	}
+	
+
+}
 
 
