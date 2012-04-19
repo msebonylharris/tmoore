@@ -10,7 +10,7 @@ body{
   	border: .25em solid #036; /* 32px/16px */
  	padding: .7407407407407407% /*.625em or 10px/16px */;
 	margin: .7407407407407407% /*.625em or 10px/16px */;
-	background: url('../images/bluetexturedscreen2.png') repeat 20% fixed;
+	background: url('../images/bluetexturedscreen2.png') repeat 20%;
 	width: 96.42857142857142%;
 }
 
