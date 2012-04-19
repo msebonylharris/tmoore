@@ -1,27 +1,31 @@
 
 /*this section is dedicated to the main body------------------------------------------------------*/
+/*===Body Width Percent Conversion = 1350px/1400px Margin Percent =  96.42857142857142% ======*/
+/*==Body Margin / Padding Percent Conversion = 10px/1300px Margin Percent =  1.041666666666667% ==*/
+
 body{
   	float: left;
   	color: black;
   	font: 1em /* 16px/16px*/ Georgia, Verdana, ariel;
-  	width: 960px;
   	border: .25em solid #036; /* 32px/16px */
- 	padding: .5em/* 10px/16px */;
-	margin: .5em /* 10px/16px */;
+ 	padding: .7407407407407407% /*.625em or 10px/16px */;
+	margin: .7407407407407407% /*.625em or 10px/16px */;
 	background: url('../images/bluetexturedscreen2.png') repeat 20% fixed;
+	width: 96.42857142857142%;
 }
 
 
 
 /*this section is dedicated to the mainphoto------------------------------------------------------*/
+/*=Section Margin/Padding Percent Conversion = .4px / 1235px Margin Percent = .3238866396761135% ==*/
 
 article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
   	background-color: #fff;
 	border: .25em /* 4px/16px */ solid #036;
-	padding: .5em /* 4px/16px */;
-  	margin: .5em /*4px/16px */;
+	padding: .3238866396761135% /*.25em or 4px/16px */;
+  	margin: .3238866396761135% /*.25em or 4px/16px */;
   	float: left;
-  	width: 95%;
+  	width: 95%;/* 1235px / 1350px = 95% */
   	}
 
 /*This section is for the Education Section. It should contain no other css */
@@ -77,6 +81,7 @@ h1{
 	font: 3.25em /* 52px/16px*/ ariel;
 	text-align: center;
 	color: #036;
+	float: left;
 }
 
 h6{
@@ -93,7 +98,21 @@ h6{
   	margin: .5em /*4px/16px */; 
 }
 
+#main_photo_container{
+	width: 35.63596491228069%;  /* 325px / 960px*/
+	/*float: left;*/
+}
+
+#main_photo_container img{
+	max-width: 100%;
+}
+
+section ul li img{
+width: 21.92982456140352%;  /* 200px / 912px*/
+}
+
 /*this section is for the images------------------------------------------------------------------*/
+/*===The width of an image is 200px. ===*/
 img{
   	float: left;
   	display: inline;
@@ -102,18 +121,48 @@ img{
  	padding: .5em /* 4px/16px */;
   	margin: .5em /*4px/16px */; 	  
   	opacity: 0.95;
-  	border-radius: 2%;
+  	border-radius: 5%;
+}
 
+/*=============Since each photo is has different widths, they are listed separately.=============*/
+/*===The width of the tm_office_photo is 499px. ===*/
+/*==== 4px /499px = .8016032064128252% ====*/
+#tm_office_photo{
+ 	padding: .8016032064128252% /*.5em or 4px/16px */;
+  	margin: .8016032064128252% /*.5em or 4px/16px */; 	  
+}
+
+/*===The width of the tm_working_photo is 502px. ===*/
+/*==== 4px /502px = .7968127490039839% ====*/
+#tm_working_photo{
+ 	padding: .7968127490039839% /*.5em or 4px/16px */;
+  	margin: .7968127490039839% /*.5em or 4px/16px */; 	  
+}
+
+/*===The width of the notary_photo is 888px ===*/
+/*==== 4px/888px =.4504504504504504% ====*/
+#notary_photo{
+ 	padding: .4504504504504504% /*.5em or 4px/16px */;
+  	margin: .4504504504504504% /*.5em or 4px/16px */; 	  
+}
+
+/*===The width of the tm_desk_photo 894px. ===*/
+/*==== 4px / 894px = .4474272930648769% ====*/
+#tm_desk_photo{
+ 	padding: .4474272930648769% /*.5em or 4px/16px */;
+  	margin: .4474272930648769% /*.5em or 4px/16px */; 	  
+}
+
+/*===The width of the main_photo_container 819px. ===*/
+/*==== 4px / 819px = .4884004884004882% ====*/
+#main_photo_container{
+ 	padding: .4884004884004882% /*.5em or 4px/16px */;
+  	margin: .4884004884004882% /*.5em or 4px/16px */; 	  
 }
 
 /*This section is for the footer section. It should contain no other css */
 footer{
   	font-size: 1em;
-}
-
-#footer{
-  	font-size: .75em; /* 12px/16px*/
-  	width: 90%;
 }
 
 /*========================================MAIN NAV & LINKS=======================================*/
@@ -122,7 +171,8 @@ nav ul li{
 	width: 30%;
 	background: #069;
 	float: left;
-	padding: .75em;
+	padding: .5em /*4px/16px */;
+	margin: .5em /*4px/16px */; 	  
 	list-style-type: none;
 }
 
@@ -151,7 +201,6 @@ a:active{
 	background: #009;
 }
 /*=================THIS MARKS THE END OF THE MAIN NAV & LINKS CSS=============================*/
-
 
 
 
