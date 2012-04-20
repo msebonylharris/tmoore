@@ -63,7 +63,7 @@ article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
   	background: url('../images/graytexturedscreen.png') repeat 50% fixed;
   	width: 55%;
   	float: right;
-  	
+  	border-color: #F93;
 }
 
 #request_info{
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-	font: 2.5em /* 40px/16px*/ ariel;
+	font: 2em /* 40px/16px*/ ariel;
 	text-align: center;
 	color: #036;
 	float: left;
@@ -209,6 +209,28 @@ a:active{
 	color: #fff;
 	background: #009;
 }
+
+/*=============================== The following is for the CTA Link ==============================*/
+.cta a{
+	text-decoration: none;
+	background: #f93;
+	height: 2.25em;
+	line-height: 3em;
+	text-align: center;
+	color: #069;
+  	height: 200%;
+  	width: 60%;
+ 	display: inline-block;
+  	position:relative;
+  	line-height: 300%;
+  	border-radius: 180%;
+  	border-style: solid;
+}
+
+.cta a:hover{
+	color: #f93;
+	background: #069;
+}
 /*========================THIS MARKS THE END OF THE MAIN NAV & LINKS CSS==========================*/
 
 /*-----------------------------------------MEDIA QUERIES------------------------------------------*/
@@ -216,13 +238,13 @@ a:active{
 
 @media screen and (max-width: 980px) {
 	nav ul li{
-	width: 80%;
+	width: 97%;
 	}
 	
 	h1{
 	font-size: 1.75em;
-	}
-	
+	}	
+
 	.cta{
 	font-size: 1.75em /* 32px*/;
 	text-align: center;
@@ -230,21 +252,55 @@ a:active{
   	width: 95%;
   	float: left;
   	}
+  	
+  		
+	article{
+  	float: right;
+  	width: 54%;
+  	}
 	
-
 }
 
 /*==================== THE FOLLOWING MEDIA QUEREIS ARE FOR 700PX OR LESS =========================*/
 
 @media screen and (max-width: 700px) {
+	nav ul li{
+	width: 95%;
+	}
+	
 	.cta{
 	font-size: 1.5em /* 32px*/;
   	}
 	
-	.main_photo, .photo_gal, .paralegal_benefits, .ed {
+	.photo_gal {
 	display: none;
 	}
+	
+	article{
+  	float: left;
+  	width: 95%;
+  	}
+	
+	h2, h3, h4, h5, h6{
+  	font-size: 1.25em;
+	}
 
+	
+
+	.paralegal_benefits{
+  	column-count: 2;
+  	column-gap: 1.94331983805668%;
+  	-ms-column-count: 2;
+  	-ms-column-gap: 1.94331983805668%; 
+  	-moz-column-count: 2;
+  	-moz-column-gap: 1.94331983805668%; 
+  	-web-column-count: 2;
+  	-web-column-gap: 1.94331983805668%; 
+  	-o-column-count: 2;
+  	-o-column-gap: 1.94331983805668%;
+  	-khtml-column-count: 2;
+  	-khtml-column-gap: 1.94331983805668%;
+  	}
 }
 
 /*==================== THE FOLLOWING MEDIA QUEREIS ARE FOR 480PX OR LESS =========================*/
@@ -258,10 +314,26 @@ a:active{
 	font-size: 1.5em /* 16px*/;
 	}
 	
+	h2, h3, h4, h5, h6{
+  	font-size: 1em;
+	}
+
 	.cta{
 	font-size: 1.25em /* 12px*/;
   	}
+  	
+  	.main_photo{
+	display: none;
+	}
 	
+	.paralegal_benefits{
+  	column-count: 1;
+  	-ms-column-count: 1;
+  	-moz-column-count: 1;
+  	-web-column-count: 1;
+  	-o-column-count: 1;
+  	-khtml-column-count: 1;
+  	}
 
 }
 
