@@ -60,10 +60,10 @@ article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
 /*This section is for the CTA section "Call to Action" . It should contain no other css */
 
 .cta{
-  	background: url('../images/graytexturedscreen.png') repeat 50% fixed;
+  	background: url('../images/cta_background.png') repeat 50%;
   	width: 55%;
   	float: right;
-  	border-color: #F93;
+  	color: #F60;
 }
 
 #request_info{
@@ -83,15 +83,22 @@ h1, h2, h3, h4, h5, h6{
 h1{
 	font: 2em /* 40px/16px*/ ariel;
 	text-align: center;
-	color: #036;
+	color: #f60;
 	float: left;
 }
 
 .cta{
-  	font: 1.75em /* 32px/16px*/ ariel;
-  	color: #006;
+  	font: 1.5em /* 32px/16px*/ ariel;
+  	color: black;
   	text-shadow: .03125em .03125em .03125em #000;
 }
+
+#cta_info{
+	background: #fff;
+ 	padding: .4884004884004882% /*.5em or 4px/16px */;
+  	margin: .4884004884004882% /*.5em or 4px/16px */; 	
+  }
+
 
 #request_info{
 	text-align: center;
@@ -213,23 +220,24 @@ a:active{
 /*=============================== The following is for the CTA Link ==============================*/
 .cta a{
 	text-decoration: none;
-	background: #f93;
-	height: 2.25em;
-	line-height: 3em;
+	background: #f60;
 	text-align: center;
 	color: #069;
   	height: 200%;
   	width: 60%;
  	display: inline-block;
   	position:relative;
-  	line-height: 300%;
-  	border-radius: 180%;
+  	line-height: 200%;
+  	border-radius: 50%;
   	border-style: solid;
+  	opacity: 0.9;
+
 }
 
 .cta a:hover{
-	color: #f93;
+	color: #f60;
 	background: #069;
+	opacity: 0.7;
 }
 /*========================THIS MARKS THE END OF THE MAIN NAV & LINKS CSS==========================*/
 
@@ -246,9 +254,8 @@ a:active{
 	}	
 
 	.cta{
-		font-size: 1.75em /* 32px*/;
+		font-size: 1.25em /* 32px*/;
 		text-align: center;
-		color: #036;
   		width: 95%;
   		float: left;
   	}
@@ -269,7 +276,7 @@ a:active{
 	}
 	
 	.cta{
-		font-size: 1.5em;
+		font-size: 1em;
   	}
 	
 	.photo_gal {
@@ -325,9 +332,9 @@ a:active{
   		font-size: 1em;
 	}
 
-	.cta{
-		font-size: 1.25em /* 12px*/;
-  	}
+	/*.cta{
+		font-size: .9em /* 12px;
+  	} */
   	
 	.paralegal_benefits{
   		column-count: 1;
@@ -341,8 +348,100 @@ a:active{
 	.main_photo{
  		display: none; 	  
 	}
-
-
 }
 
-
+/*======================================PRACTICE CTA BUTTONS======================================*/
+/*.cta a{
+color:#fff;
+background-image: url("icons/bg-button.png");
+background-repeat: repeat-x;
+background-position: 0 0;
+padding:0 10px;
+font-size: 22px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+border-style: solid;
+border-width: 1px;
+margin:3px 0;
+line-height: 28px;
+border-color: #e1e1e1;
+background-color: #f8f8f8;
+}
+ 
+.cta a:hover{
+background-position: 0 -4px;
+opacity:0.9;
+color:#fff;
+text-decoration: none;
+}
+ 
+/*.call-button.dark , .call-button.dark:hover{
+30
+color:#444;
+31
+}
+32
+.call-button.large{
+33
+padding:0 10px 0px 10px;
+34
+font-size: 13px;
+35
+line-height: 33px;
+36
+}
+37
+ 
+38
+.call-button.xl{
+39
+padding:0 18px 0px 18px;
+40
+font-size: 18px;
+41
+line-height: 42px;
+42
+}
+43
+ 
+44
+.call-button span{
+45
+position: relative;
+46
+}
+47
+ 
+48
+.call-button .call-info{    background: transparent url("icons/info.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
+49
+.call-button .call-alert{   background: transparent url("icons/alert.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
+50
+.call-button .call-tick{ background: transparent url("icons/tick.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
+51
+.call-button .call-download{background: transparent url("icons/download.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
+52
+.call-button .call-note{    background: transparent url("icons/note.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
+53
+.call-button .call-error{   background: transparent url("icons/error.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
+54
+.call-button .call-help{    background: transparent url("icons/help.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
+55
+ 
+56
+.call-button.red{background-color: #b00202;     border-color: #b00202; }
+57
+.call-button.orange{background-color: #f6a240;  border-color: #f6a240; }
+58
+.call-button.green{background-color: #52851b;   border-color: #52851b; }
+59
+.call-button.aqua{background-color: #58c4be;    border-color: #58c4be; }
+60
+.call-button.teal{background-color: #1d9f9f;    border-color: #1d9f9f; }
+61
+.call-button.purple{background-color: #a258c4;  border-color: #a258c4; }
+62
+.call-button.pink{background-color: #f346b0;    border-color: #f346b0; }
+63
+.call-button.silver{background-color: #d7d7d7;  border-color: #d7d7d7; }*/
