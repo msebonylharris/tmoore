@@ -17,7 +17,7 @@ body{
 /*this section is dedicated to the mainphoto------------------------------------------------------*/
 /*=Section Margin/Padding Percent Conversion = .4px / 1235px Margin Percent = .3238866396761135% ==*/
 
-article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
+article, .ed, .paralegal_benefits, .photo_gal, .cta, footer, table, form{
   	background-color: #fff;
 	border: .25em /* 4px/16px */ solid #036;
 	padding: .3238866396761135%;  /*.25em or 4px/16px */
@@ -25,6 +25,33 @@ article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
   	float: left;
   	width: 95%;  /* 1235px / 1350px = 95% */
   	}
+
+/*====================THIS CSS IS USED FOR THE TABLE=====================*/  	
+  td{
+  	border: .0625em solid #036;
+  	padding: .3238866396761135%;  /*.25em or 4px/16px */
+
+  }
+
+  table{
+  	border-collapse: collapse;
+  }
+  
+   .odd{
+  	background-color: #87ceeb;
+  }
+  
+  .even{
+  	background-color: #f8f8ff;
+  }
+/*================THIS SECTION OF THE CSS IS FOR THE FORM=====================*/
+
+   form{
+  	background-color: #87ceeb;
+	width: 50%;
+	}
+  }
+  
 
 /*This section is for the Education Section. It should contain no other css */
 
@@ -74,7 +101,7 @@ article, .ed, .paralegal_benefits, .photo_gal, .cta, footer{
 	
 
 /*this section is dedicated to the headings------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, h7{
   	color: #069;
   	font: 1.5em /* 24px/16px*/ Helvetica Neue, Ariel;
   	text-shadow: .0625em .0625em .0625em #111;
@@ -246,8 +273,9 @@ a:active{
 
 @media screen and (max-width: 980px) {
 	nav ul li{
-		width: 97%;
+		width: 100%;
 	}
+
 	
 	h1{
 		font-size: 1.75em;
@@ -273,6 +301,9 @@ a:active{
 @media screen and (max-width: 700px) {
 	nav ul li{
 		width: 95%;
+	}
+		form{
+		width: 80%;
 	}
 	
 	.cta{
@@ -317,6 +348,14 @@ a:active{
   	}
 }
 
+/*==================== THE FOLLOWING MEDIA QUEREIS ARE FOR 550PX OR LESS =========================*/
+
+@media screen and (max-width: 550px) {
+	table{
+ 		display: none; 	  
+	}
+
+}
 /*==================== THE FOLLOWING MEDIA QUEREIS ARE FOR 480PX OR LESS =========================*/
 
 @media screen and (max-width: 480px) {
@@ -324,6 +363,10 @@ a:active{
 		width: 90%;
 	}
 	
+	form{
+		width: 98%;
+	}
+
 	h1{
 		font-size: 1.5em /* 16px*/;
 	}
@@ -348,100 +391,7 @@ a:active{
 	.main_photo{
  		display: none; 	  
 	}
+
 }
 
 /*======================================PRACTICE CTA BUTTONS======================================*/
-/*.cta a{
-color:#fff;
-background-image: url("icons/bg-button.png");
-background-repeat: repeat-x;
-background-position: 0 0;
-padding:0 10px;
-font-size: 22px;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
-border-style: solid;
-border-width: 1px;
-margin:3px 0;
-line-height: 28px;
-border-color: #e1e1e1;
-background-color: #f8f8f8;
-}
- 
-.cta a:hover{
-background-position: 0 -4px;
-opacity:0.9;
-color:#fff;
-text-decoration: none;
-}
- 
-/*.call-button.dark , .call-button.dark:hover{
-30
-color:#444;
-31
-}
-32
-.call-button.large{
-33
-padding:0 10px 0px 10px;
-34
-font-size: 13px;
-35
-line-height: 33px;
-36
-}
-37
- 
-38
-.call-button.xl{
-39
-padding:0 18px 0px 18px;
-40
-font-size: 18px;
-41
-line-height: 42px;
-42
-}
-43
- 
-44
-.call-button span{
-45
-position: relative;
-46
-}
-47
- 
-48
-.call-button .call-info{    background: transparent url("icons/info.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
-49
-.call-button .call-alert{   background: transparent url("icons/alert.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
-50
-.call-button .call-tick{ background: transparent url("icons/tick.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
-51
-.call-button .call-download{background: transparent url("icons/download.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
-52
-.call-button .call-note{    background: transparent url("icons/note.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
-53
-.call-button .call-error{   background: transparent url("icons/error.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
-54
-.call-button .call-help{    background: transparent url("icons/help.png") no-repeat center left; padding: 2px 0 2px 22px; left:-2px;}
-55
- 
-56
-.call-button.red{background-color: #b00202;     border-color: #b00202; }
-57
-.call-button.orange{background-color: #f6a240;  border-color: #f6a240; }
-58
-.call-button.green{background-color: #52851b;   border-color: #52851b; }
-59
-.call-button.aqua{background-color: #58c4be;    border-color: #58c4be; }
-60
-.call-button.teal{background-color: #1d9f9f;    border-color: #1d9f9f; }
-61
-.call-button.purple{background-color: #a258c4;  border-color: #a258c4; }
-62
-.call-button.pink{background-color: #f346b0;    border-color: #f346b0; }
-63
-.call-button.silver{background-color: #d7d7d7;  border-color: #d7d7d7; }*/
