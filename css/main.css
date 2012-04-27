@@ -50,8 +50,6 @@ article, .ed, .paralegal_benefits, .photo_gal, .cta, footer, table, form{
   	background-color: #87ceeb;
 	width: 50%;
 	}
-  }
-  
 
 /*This section is for the Education Section. It should contain no other css */
 
@@ -101,7 +99,7 @@ article, .ed, .paralegal_benefits, .photo_gal, .cta, footer, table, form{
 	
 
 /*this section is dedicated to the headings------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6, h7{
+h1, h2, h3, h4, h5, h6{
   	color: #069;
   	font: 1.5em /* 24px/16px*/ Helvetica Neue, Ariel;
   	text-shadow: .0625em .0625em .0625em #111;
@@ -302,7 +300,7 @@ a:active{
 	nav ul li{
 		width: 95%;
 	}
-		form{
+	form{
 		width: 80%;
 	}
 	
